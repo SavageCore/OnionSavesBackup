@@ -11,6 +11,6 @@ A Windows tray application to backup saves from an [Onion](https://github.com/On
 
 1. Download the latest release from the [releases page](https://github.com/SavageCore/OnionSavesBackup/releases/latest)
 2. Double click the downloaded file to run the application
-3. Right click the tray icon to **Choose Backup Folder** or **Exit**
+3. Right click the tray icon to **Choose Backup Folder**, **Start with Windows** or **Exit**
 
-By default, the application will backup saves to `C:\Users\<username>\Desktop\OnionSavesBackup`
+By default, the application will backup saves to `C:\Users\<username>\Desktop\OnionSavesBackup` and will Start with Windows
