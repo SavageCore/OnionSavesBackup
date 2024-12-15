@@ -20,7 +20,7 @@ from helpers.config import (
 from helpers.github import auto_update
 
 REPO = "SavageCore/OnionSavesBackup"
-CURRENT_VERSION = "0.0.0"
+CURRENT_VERSION = "0.1.0"
 APP_PATH = os.path.dirname(os.path.abspath(sys.executable))
 
 if not read_config():
