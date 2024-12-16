@@ -4,7 +4,7 @@ black==24.10.0
 pystray==0.19.5
 pillow==11.0.0
 pyinstaller==6.11.1
-packaging==24.1
+packaging==24.2
 psutil===6.0.0
 requests==2.32.3
 semver===3.0.2
