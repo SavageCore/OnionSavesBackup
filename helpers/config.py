@@ -1,4 +1,7 @@
 import json
+import os
+
+CONFIG_FILE = os.path.expanduser("~/OnionSavesBackup/config.json")
 
 
 def read_config():
@@ -13,7 +16,7 @@ def read_config():
         If the configuration file does not exist.
     """
     try:
-        with open("config.json", "r") as f:
+        with open(CONFIG_FILE, "r") as f:
             config = json.load(f)
             return config
     except FileNotFoundError:
@@ -40,5 +43,6 @@ def save_config(config):
     config : dict
         The configuration file as a dictionary.
     """
-    with open("config.json", "w") as f:
+    os.makedirs(os.path.dirname(CONFIG_FILE), exist_ok=True)
+    with open(CONFIG_FILE, "w") as f:
         json.dump(config, f, indent=4)
